@@ -3,14 +3,14 @@ import config from "../../config.json";
 
 const StyledBanner = styled.div`
     width: 100%;
-    height: 230px;
+    height: 300px;
     background-image: ${({ bg }) => `url("${bg}")`};
     background-size: cover;
     background-position: center;
     .banner {
         max-width: 100%;
         width: 100%;
-        height: 230px;
+        height: 300px;
         object-fit: none;
     }
 `;
