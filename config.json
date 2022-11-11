@@ -5,7 +5,14 @@
     "playlists": {
         "games": [
             {
-                "title": "Algum titulo",
+                "title": "Algum titulo games",
+                "url": "url",
+                "thumb": "thumbnail do video"
+            }
+        ],
+        "front-end": [
+            {
+                "title": "Algum titulo front-end",
                 "url": "url",
                 "thumb": "thumbnail do video"
             }

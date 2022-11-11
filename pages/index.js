@@ -1,39 +1,57 @@
 import config from "../config.json";
 import styled from "styled-components";
+import { CSSReset } from "../src/components/CSSReset";
+import Menu from "../src/components/Menu";
+import { StyledTimeline } from "../src/components/Timeline";
 
-function    HomePage()  {
-    const   homepage_style = { backgroundColor: "red" };
-
-    console.log(config.playlists);
+function HomePage() {
+    const homepage_style = {
+        display: "flex",
+        flexDirection: "column",
+        flex: 1,
+        // backgroundColor: "red",
+    };
 
     return (
-        <div>
-            <div style={homepage_style}>
-                <Menu />
-                <Header />
-                <Timeline playlists={config.playlists} />
+        <>
+            <CSSReset />
+            <div>
+                <div style={homepage_style}>
+                    <Menu />
+                    <Header />
+                    <Timeline playlists={config.playlists} />
+                </div>
             </div>
-        </div>
+        </>
     );
 }
 
 export default HomePage
 
-function    Menu()  {
-    return (
-        <div>
-            Menu
-        </div>
-    );
-}
+// function Menu() {
+//     return (
+//         <div>
+//             Menu
+//         </div>
+//     );
+// }
 
-const   StyledHeader = styled.div`
+// const StyledBanner = styled.div`
+//     width: 100%;
+//     height: 230px;
+//     background-image: ${({ bg }) => `url("${bg}")`};
+//     background-size: cover;
+//     background-position: center;
+// `;
+
+const StyledHeader = styled.div`
     img {
         width: 80px;
         height: 80px;
         border-radius: 50%;
     }
     .user-info {
+        margin-top: 50px;
         display: flex;
         align-items: center;
         width: 100%;
@@ -41,7 +59,7 @@ const   StyledHeader = styled.div`
         gap: 16px;
     }
 `;
-function    Header()    {
+function Header() {
     return (
         <StyledHeader>
             {/* <img src="banner" /> */}
@@ -60,11 +78,38 @@ function    Header()    {
     );
 }
 
-function    Timeline(props)  {
-    console.log("Dentro do componente", props);
+function Timeline(props) {
+    // console.log("Dentro do componente", props);
+    const playlist_names = Object.keys(props.playlists);
+    // Statement
+    // Retorno por expressão
+    // map o tempo todo
     return (
-        <div>
-            Timeline
-        </div>
+        <StyledTimeline>
+            {playlist_names.map((playlist_name) => {
+                const videos = props.playlists[playlist_name];
+                console.log(playlist_name);
+                console.log(videos);
+                return (
+                    <section>
+                        <h2>{playlist_name}</h2>
+                        <div>
+                            {
+                                videos.map((video) => {
+                                    return (
+                                        <a href={video.url}>
+                                            <img src={video.thumb} />
+                                            <span>
+                                                {video.title}
+                                            </span>
+                                        </a>
+                                    );
+                                })
+                            }
+                        </div>
+                    </section>
+                );
+            })}
+        </StyledTimeline>
     );
 }
