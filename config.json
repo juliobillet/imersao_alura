@@ -1,0 +1,14 @@
+{
+    "name": "Júlio Billet",
+    "job": "Junior Software Developer",
+    "github": "juliobillet",
+    "playlists": {
+        "games": [
+            {
+                "title": "Algum titulo",
+                "url": "url",
+                "thumb": "thumbnail do video"
+            }
+        ]
+    }
+}
