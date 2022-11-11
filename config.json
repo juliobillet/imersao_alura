@@ -2,19 +2,87 @@
     "name": "Júlio Billet",
     "job": "Junior Software Developer",
     "github": "juliobillet",
+    "banner": "https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80",
     "playlists": {
-        "games": [
-            {
-                "title": "Algum titulo games",
-                "url": "url",
-                "thumb": "thumbnail do video"
-            }
-        ],
         "front-end": [
             {
-                "title": "Algum titulo front-end",
-                "url": "url",
-                "thumb": "thumbnail do video"
+                "title": "O que todo projeto deveria ter? #01 | GitHub PRO + Projetos Organizados + Linter + EditorConfig",
+                "url": "https://youtu.be/yMRSDdifGW8",
+                "thumb": "https://i3.ytimg.com/vi/yMRSDdifGW8/maxresdefault.jpg"
+            },
+            {
+                "title": "O que todo projeto deveria ter? #01 | GitHub PRO + Projetos Organizados + Linter + EditorConfig",
+                "url": "https://youtu.be/yMRSDdifGW8",
+                "thumb": "https://i3.ytimg.com/vi/yMRSDdifGW8/maxresdefault.jpg"
+            },
+            {
+                "title": "O que todo projeto deveria ter? #01 | GitHub PRO + Projetos Organizados + Linter + EditorConfig",
+                "url": "https://youtu.be/yMRSDdifGW8",
+                "thumb": "https://i3.ytimg.com/vi/yMRSDdifGW8/maxresdefault.jpg"
+            },
+            {
+                "title": "O que todo projeto deveria ter? #01 | GitHub PRO + Projetos Organizados + Linter + EditorConfig",
+                "url": "https://youtu.be/yMRSDdifGW8",
+                "thumb": "https://i3.ytimg.com/vi/yMRSDdifGW8/maxresdefault.jpg"
+            },
+            {
+                "title": "O que todo projeto deveria ter? #01 | GitHub PRO + Projetos Organizados + Linter + EditorConfig",
+                "url": "https://youtu.be/yMRSDdifGW8",
+                "thumb": "https://i3.ytimg.com/vi/yMRSDdifGW8/maxresdefault.jpg"
+            }
+        ],
+        "games": [
+            {
+                "title": "alanzoka jogando God of War Ragnarok - Parte #1",
+                "url": "https://youtu.be/uy-66JYifYw",
+                "thumb": "https://i3.ytimg.com/vi/uy-66JYifYw/maxresdefault.jpg"
+            },
+            {
+                "title": "alanzoka jogando God of War Ragnarok - Parte #1",
+                "url": "https://youtu.be/uy-66JYifYw",
+                "thumb": "https://i3.ytimg.com/vi/uy-66JYifYw/maxresdefault.jpg"
+            },
+            {
+                "title": "alanzoka jogando God of War Ragnarok - Parte #1",
+                "url": "https://youtu.be/uy-66JYifYw",
+                "thumb": "https://i3.ytimg.com/vi/uy-66JYifYw/maxresdefault.jpg"
+            },
+            {
+                "title": "alanzoka jogando God of War Ragnarok - Parte #1",
+                "url": "https://youtu.be/uy-66JYifYw",
+                "thumb": "https://i3.ytimg.com/vi/uy-66JYifYw/maxresdefault.jpg"
+            },
+            {
+                "title": "alanzoka jogando God of War Ragnarok - Parte #1",
+                "url": "https://youtu.be/uy-66JYifYw",
+                "thumb": "https://i3.ytimg.com/vi/uy-66JYifYw/maxresdefault.jpg"
+            }
+        ],
+        "ASMR": [
+            {
+                "title": "ASMR Arcane Caitlyn | Personal Attention, Patching You Up, Hair Brushing | Stillwater Hold",
+                "url": "https://youtu.be/ssfikaTQB_g",
+                "thumb": "http://i3.ytimg.com/vi/ssfikaTQB_g/hqdefault.jpg"
+            },
+            {
+                "title": "The Best Of Gibi ASMR | 1 Hour of YOUR FAVORITE ASMR Moments!",
+                "url": "https://youtu.be/kz-Ox699wKE",
+                "thumb": "https://i3.ytimg.com/vi/kz-Ox699wKE/maxresdefault.jpg"
+            },
+            {
+                "title": "Phone Shopping, 1910 | ASMR (Edwardian era, page flipping, soft rain, soft spoken, a bit of french)",
+                "url": "https://youtu.be/faRLyinWHt8",
+                "thumb": "https://i3.ytimg.com/vi/faRLyinWHt8/maxresdefault.jpg"
+            },
+            {
+                "title": "ASMR | The Grail Watch",
+                "url": "https://youtu.be/R9FjNJIDMak",
+                "thumb": "https://i3.ytimg.com/vi/R9FjNJIDMak/maxresdefault.jpg"
+            },
+            {
+                "title": "ASMR | Man on Train, 1890",
+                "url": "https://youtu.be/78bWAeHPrpo",
+                "thumb": "https://i3.ytimg.com/vi/78bWAeHPrpo/maxresdefault.jpg"
             }
         ]
     }

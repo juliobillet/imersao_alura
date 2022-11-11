@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { CSSReset } from "../src/components/CSSReset";
 import Menu from "../src/components/Menu";
 import { StyledTimeline } from "../src/components/Timeline";
+import Banner from "../src/components/Banner";
 
 function HomePage() {
     const homepage_style = {
@@ -18,6 +19,7 @@ function HomePage() {
             <div>
                 <div style={homepage_style}>
                     <Menu />
+                    <Banner />
                     <Header />
                     <Timeline playlists={config.playlists} />
                 </div>
@@ -36,14 +38,6 @@ export default HomePage
 //     );
 // }
 
-// const StyledBanner = styled.div`
-//     width: 100%;
-//     height: 230px;
-//     background-image: ${({ bg }) => `url("${bg}")`};
-//     background-size: cover;
-//     background-position: center;
-// `;
-
 const StyledHeader = styled.div`
     img {
         width: 80px;
@@ -51,7 +45,7 @@ const StyledHeader = styled.div`
         border-radius: 50%;
     }
     .user-info {
-        margin-top: 50px;
+        /* margin-top: 50px; */
         display: flex;
         align-items: center;
         width: 100%;
