@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledTimeline = styled.div`
+const StyledTimeline = styled.div`
   flex: 1;
   width: 100%;
   padding: 16px;
@@ -45,3 +45,39 @@ export const StyledTimeline = styled.div`
     }
   }
 `;
+
+export default function Timeline(props) {
+  // console.log("Dentro do componente", props);
+  const playlist_names = Object.keys(props.playlists);
+  // Statement
+  // Retorno por expressão
+  // map o tempo todo
+  return (
+      <StyledTimeline>
+          {playlist_names.map((playlist_name) => {
+              const videos = props.playlists[playlist_name];
+              console.log(playlist_name);
+              console.log(videos);
+              return (
+                  <section>
+                      <h2>{playlist_name}</h2>
+                      <div>
+                          {
+                              videos.map((video) => {
+                                  return (
+                                      <a href={video.url}>
+                                          <img src={video.thumb} />
+                                          <span>
+                                              {video.title}
+                                          </span>
+                                      </a>
+                                  );
+                              })
+                          }
+                      </div>
+                  </section>
+              );
+          })}
+      </StyledTimeline>
+  );
+}
