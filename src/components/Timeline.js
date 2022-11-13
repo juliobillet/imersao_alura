@@ -20,7 +20,6 @@ const StyledTimeline = styled.div`
   }
   section {
     width: 100%;
-    padding: 0;
     overflow: hidden;
     padding: 16px;
     div {
@@ -56,8 +55,8 @@ export default function Timeline(props) {
       <StyledTimeline>
           {playlist_names.map((playlist_name) => {
               const videos = props.playlists[playlist_name];
-              console.log(playlist_name);
-              console.log(videos);
+              // console.log(playlist_name);
+              // console.log(videos);
               return (
                   <section>
                       <h2>{playlist_name}</h2>

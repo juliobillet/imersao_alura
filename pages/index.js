@@ -5,6 +5,7 @@ import Menu from "../src/components/Menu";
 import Timeline from "../src/components/Timeline";
 import Banner from "../src/components/Banner";
 import Header from "../src/components/Header";
+import Favorites from "../src/components/Favorites";
 
 const StyledHomePage = styled.div`
     display: flex;
@@ -13,22 +14,18 @@ const StyledHomePage = styled.div`
 `;
 
 function HomePage() {
-    const homepage_style = {
-        display: "flex",
-        flexDirection: "column",
-        flex: 1,
-    };
 
     return (
         <>
             <CSSReset />
             <div>
-                <div style={homepage_style}>
+                <StyledHomePage>
                     <Menu />
-                    <Banner />
+                    <Banner banner={config.banner} />
                     <Header />
                     <Timeline playlists={config.playlists} />
-                </div>
+                    <Favorites favorites={config.favorites} />
+                </StyledHomePage>
             </div>
         </>
     );

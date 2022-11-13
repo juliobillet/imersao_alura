@@ -7,7 +7,7 @@ const StyledBanner = styled.div`
     background-image: ${({ bg }) => `url("${bg}")`};
     background-size: cover;
     background-position: center;
-    .banner {
+    img {
         max-width: 100%;
         width: 100%;
         height: 300px;
@@ -15,18 +15,10 @@ const StyledBanner = styled.div`
     }
 `;
 
-export default function Banner()    {
+export default function Banner(props)    {
     return (
         <StyledBanner>
-            <BannerImage />
+            <img src={props.banner} />
         </StyledBanner>
-    );
-}
-
-function    BannerImage()   {
-    return (
-        <div>
-            <img className="banner" src={config.banner} />
-        </div>
     );
 }
