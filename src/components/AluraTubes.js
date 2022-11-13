@@ -62,7 +62,7 @@ export default function AluraTubes(props) {
                     {aluratubes_list.map((aluratube) => {
                         const aluratubes = props.aluratubes[aluratube];
                         // console.log(aluratube);
-                        console.log(aluratubes);
+                        // console.log(aluratubes);
                         return (
                             <a href={aluratubes.url}>
                                 <img src={`https://github.com/${aluratubes.github}.png`} />

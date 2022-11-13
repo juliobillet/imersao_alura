@@ -56,7 +56,7 @@ export default function Favorites(props) {
                     {favorites_list.map((favorite) => {
                         const favorites = props.favorites[favorite];
                         // console.log(favorite);
-                        console.log(favorites);
+                        // console.log(favorites);
                         return (
                             <a href={favorites.url}>
                                 <img src={favorites.picture} />
