@@ -90,42 +90,52 @@
         {
             "picture": "https://yt3.ggpht.com/xqhIoXspeX7eqouJvNHl1xqpv9213Pl26ENZbuouXxO2RlDadjsveNXfgnj8GTUk7thFYUkVRg=-c-k-c0x00ffffff-no-rj",
             "url": "https://www.youtube.com/c/Alura",
-            "user_name": "Alura"
+            "channel_name": "Alura"
         },
         {
             "picture": "https://yt3.ggpht.com/m8Yrqf0Y81L4mZ1Cq7rGnJ4NDHe6729rxiFZvWyy9-xd_Z7Osmza7J8NWpN1axMHcCb1oKJNgA=-c-k-c0x00ffffff-no-rj",
             "url": "https://www.youtube.com/c/DevSoutinho",
-            "user_name": "Dev Soutinho"
+            "channel_name": "Dev Soutinho"
         },
         {
             "picture": "https://yt3.ggpht.com/uGZvn8XP3SwpUrD7W_6CRNwGZX-NJHg-NIkTSvky_nPLlUEx-kqQ3vTJw4MDOT24BXp9Deft=-c-k-c0x00ffffff-no-rj",
             "url": "https://www.youtube.com/c/GibiASMR",
-            "user_name": "Gibi ASMR"
+            "channel_name": "Gibi ASMR"
         },
         {
             "picture": "https://yt3.ggpht.com/ytc/AMLnZu9yLkATpPW_nzR3vTu6T8I5N4cQ8AkHF-WRUKAH_g=-c-k-c0x00ffffff-no-rj",
             "url": "https://www.youtube.com/@AmyKayASMR",
-            "user_name": "Amy Kay ASMR"
+            "channel_name": "Amy Kay ASMR"
         },
         {
             "picture": "https://yt3.ggpht.com/BRZ_Ggk_3jd5psr9Kc1CzVsdJ3JmaYdYVngwQYHc-2H8kU5uD823jh_docA3SvYvv9Qkn3ay=-c-k-c0x00ffffff-no-rj",
             "url": "https://www.youtube.com/c/AtlasASMR",
-            "user_name": "Atlas ASMR"
+            "channel_name": "Atlas ASMR"
         },
         {
             "picture": "https://yt3.ggpht.com/ytc/AMLnZu8ols4v6xJtNosUSC8Ebj2qgK_qDC7pLzB5UYg3=-c-k-c0x00ffffff-no-rj",
             "url": "https://www.youtube.com/c/LivesAlanzoka",
-            "user_name": "Lives do Alanzoka"
+            "channel_name": "Lives do Alanzoka"
         },
         {
             "picture": "https://yt3.ggpht.com/gwP6uXxMNu6dJuNykzSSh8SPZWnc2OZkcWa2NKO_11oy4Gy2nKAnYPxqYqsdFiGNMz64av3j=-c-k-c0x00ffffff-no-rj",
             "url": "https://www.youtube.com/c/MoonlightCottageASMR",
-            "user_name": "Moonlight Cottage ASMR"
+            "channel_name": "Moonlight Cottage ASMR"
         },
         {
             "picture": "https://yt3.ggpht.com/ytc/AMLnZu9fwc9E-G17B2vMnbYzZBp_NYs4AmCE802y8x08=-c-k-c0x00ffffff-no-rj",
             "url": "https://www.youtube.com/c/FilipeDeschamps",
-            "user_name": "Filipe Deschamps"
+            "channel_name": "Filipe Deschamps"
+        }
+    ],
+    "aluratubes": [
+        {
+            "github": "sucodelarangela",
+            "url": "https://aluratube-next-js.vercel.app/"
+        },
+        {
+            "github": "NobertoFerreiraFilho",
+            "url": "https://noberto-tube.vercel.app/"
         }
     ]
 }

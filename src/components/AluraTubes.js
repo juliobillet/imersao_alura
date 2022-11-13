@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledFavorites = styled.div`
+const StyledAluraTubes = styled.div`
   flex: 1;
   width: 100%;
   padding: 16px;
@@ -36,38 +36,44 @@ const StyledFavorites = styled.div`
         span {
           padding-top: 8px;
           display: block;
-          padding-right: 20px;
+          /* padding-right: 20px; */
           text-align: center;
           color: ${({ theme }) => theme.textColorBase || "#222222"};
         }
       }
     }
+    .aluratubes-wrapper {
+        text-align: center;
+        display: flex;
+        gap: 0.5rem;
+        padding: 0px 1rem 1rem;
+    }
   }
 `;
 
-export default function Favorites(props) {
-    const favorites_list = Object.keys(props.favorites);
+export default function AluraTubes(props) {
+    const aluratubes_list = Object.keys(props.aluratubes);
 
     return (
-        <StyledFavorites>
+        <StyledAluraTubes>
             <section>
-                <h2>Favorite YouTube Channels</h2>
-                <div>
-                    {favorites_list.map((favorite) => {
-                        const favorites = props.favorites[favorite];
-                        // console.log(favorite);
-                        console.log(favorites);
+                <h2>Favorite AluraTubes</h2>
+                <div className="aluratubes-wrapper">
+                    {aluratubes_list.map((aluratube) => {
+                        const aluratubes = props.aluratubes[aluratube];
+                        // console.log(aluratube);
+                        console.log(aluratubes);
                         return (
-                            <a href={favorites.url}>
-                                <img src={favorites.picture} />
+                            <a href={aluratubes.url}>
+                                <img src={`https://github.com/${aluratubes.github}.png`} />
                                 <span>
-                                    {favorites.channel_name}
+                                    {`@${aluratubes.github}`}
                                 </span>
                             </a>
                         );
                     })}
                 </div>
             </section>
-        </StyledFavorites>
+        </StyledAluraTubes>
     );
 }

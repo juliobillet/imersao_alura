@@ -6,6 +6,7 @@ import Timeline from "../src/components/Timeline";
 import Banner from "../src/components/Banner";
 import Header from "../src/components/Header";
 import Favorites from "../src/components/Favorites";
+import AluraTubes from "../src/components/AluraTubes";
 
 const StyledHomePage = styled.div`
     display: flex;
@@ -25,6 +26,7 @@ function HomePage() {
                     <Header />
                     <Timeline playlists={config.playlists} />
                     <Favorites favorites={config.favorites} />
+                    <AluraTubes aluratubes={config.aluratubes} />
                 </StyledHomePage>
             </div>
         </>
