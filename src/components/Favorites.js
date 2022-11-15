@@ -58,7 +58,7 @@ export default function Favorites(props) {
                         // console.log(favorite);
                         // console.log(favorites);
                         return (
-                            <a href={favorites.url}>
+                            <a key={favorites.url} href={favorites.url}>
                                 <img src={favorites.picture} />
                                 <span>
                                     {favorites.channel_name}

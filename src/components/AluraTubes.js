@@ -64,7 +64,7 @@ export default function AluraTubes(props) {
                         // console.log(aluratube);
                         // console.log(aluratubes);
                         return (
-                            <a href={aluratubes.url}>
+                            <a key={aluratubes.url} href={aluratubes.url}>
                                 <img src={`https://github.com/${aluratubes.github}.png`} />
                                 <span>
                                     {`@${aluratubes.github}`}

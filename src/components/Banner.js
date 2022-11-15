@@ -1,5 +1,5 @@
+import config from "../../config.json"
 import styled from "styled-components";
-import config from "../../config.json";
 
 const StyledBanner = styled.div`
     width: 100%;
@@ -7,18 +7,10 @@ const StyledBanner = styled.div`
     background-image: ${({ bg }) => `url("${bg}")`};
     background-size: cover;
     background-position: center;
-    img {
-        max-width: 100%;
-        width: 100%;
-        height: 300px;
-        object-fit: none;
-    }
 `;
 
-export default function Banner(props)    {
+export default function Banner() {
     return (
-        <StyledBanner>
-            <img src={props.banner} />
-        </StyledBanner>
+        <StyledBanner bg={config.banner} />
     );
 }

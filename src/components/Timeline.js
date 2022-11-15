@@ -45,38 +45,44 @@ const StyledTimeline = styled.div`
   }
 `;
 
-export default function Timeline(props) {
+export default function Timeline({ filter_value, ...props }) {
   // console.log("Dentro do componente", props);
   const playlist_names = Object.keys(props.playlists);
   // Statement
   // Retorno por expressão
   // map o tempo todo
   return (
-      <StyledTimeline>
-          {playlist_names.map((playlist_name) => {
-              const videos = props.playlists[playlist_name];
-              // console.log(playlist_name);
-              // console.log(videos);
-              return (
-                  <section>
-                      <h2>{playlist_name}</h2>
-                      <div>
-                          {
-                              videos.map((video) => {
-                                  return (
-                                      <a href={video.url}>
-                                          <img src={video.thumb} />
-                                          <span>
-                                              {video.title}
-                                          </span>
-                                      </a>
-                                  );
-                              })
-                          }
-                      </div>
-                  </section>
-              );
-          })}
-      </StyledTimeline>
+    <StyledTimeline>
+      {playlist_names.map((playlist_name) => {
+        const videos = props.playlists[playlist_name];
+        // console.log(playlist_name);
+        // console.log(videos);
+        return (
+          <section key={playlist_name}>
+            <h2>{playlist_name}</h2>
+            <div>
+              {
+                videos
+                  .filter((video) => {
+                    const video_title_normalized = video.title.toLowerCase();
+                    const filter_value_normalized = filter_value.toLowerCase();
+                    return (video_title_normalized.includes(filter_value_normalized));
+                  })
+                  .map((video) => {
+                    return (
+                      <a key={video.url} href={video.url}>
+                        <img src={video.thumb} />
+                        <span>
+                          {video.title}
+                        </span>
+                      </a>
+                    );
+                  })
+              }
+            </div>
+          </section>
+        );
+      })}
+    </StyledTimeline>
   );
 }

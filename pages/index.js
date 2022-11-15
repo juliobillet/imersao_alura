@@ -1,3 +1,4 @@
+import { useState } from "react";
 import config from "../config.json";
 import styled from "styled-components";
 import { CSSReset } from "../src/components/CSSReset";
@@ -15,16 +16,18 @@ const StyledHomePage = styled.div`
 `;
 
 function HomePage() {
+    const [filter_value, set_filter_value] = useState("");
 
     return (
         <>
             <CSSReset />
             <div>
                 <StyledHomePage>
-                    <Menu />
-                    <Banner banner={config.banner} />
+                    {/* Prop Drilling */}
+                    <Menu filter_value={filter_value} set_filter_value={set_filter_value} />
+                    <Banner />
                     <Header />
-                    <Timeline playlists={config.playlists} />
+                    <Timeline filter_value={filter_value} playlists={config.playlists} />
                     <Favorites favorites={config.favorites} />
                     <AluraTubes aluratubes={config.aluratubes} />
                 </StyledHomePage>
