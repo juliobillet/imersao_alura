@@ -86,3 +86,4 @@ export default function Timeline({ filter_value, ...props }) {
     </StyledTimeline>
   );
 }
+
